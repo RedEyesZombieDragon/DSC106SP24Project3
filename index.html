@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Usage Lollipop Plot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Internet Usage Lollipop Plot</h1>
+    </header>
+
+    <div class="content-container">
+        <div id="my_dataviz"></div>
+
+        <div class="control-panel">
+            <div id="legend"></div>
+
+            <div class="slider-container">
+                <input type="range" min="0" max="4" step="1" value="0" id="yearSlider">
+                <datalist id="tickmarks">
+                    <option value="0" label="2000"></option>
+                    <option value="1" label="2005"></option>
+                    <option value="2" label="2010"></option>
+                    <option value="3" label="2015"></option>
+                    <option value="4" label="2021"></option>
+                </datalist>
+                <p>Selected year: <span id="selectedYear">2000</span></p>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="countryInput" placeholder="Enter a country to highlight">
+            </div>
+            
+            <!-- Write-Up Link -->
+            <div class="write-up">
+                <h2>Write-Up</h2>
+                <p>
+                    <a href="https://docs.google.com/document/d/1MigRg_SJ5fHd5Z9hUVZn90CE7u3gI2ekbxA_gqoeAMY/edit?usp=sharing" target="_blank">
+                        Click here to view the write-up
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
